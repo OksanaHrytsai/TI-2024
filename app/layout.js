@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 import Header from "@/component/header/Header";
 import Footer from "@/component/footer/Footer";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body>
+        <Link href="#maincontent" className='skipmain'>Перейти до головного</Link>
         <Header />
         {children}
         <Footer />

@@ -12,25 +12,25 @@ export default function Social() {
   return (
     <p className={classes.social}>
       <Link href="https://www.facebook.com/">
-        <Image src={logoF} />
+        <Image src={logoF} alt="перейти на фейсбук" />
       </Link>
       <Link href="https://www.youtube.com/">
-        <Image src={logoYT} />
+        <Image src={logoYT} alt="перейти на ютуб" />
       </Link>
       <Link href="https://www.x.com/">
-        <Image src={logoX} />
+        <Image src={logoX} alt="перейти на ікс" />
       </Link>
       <Link href="https://www.instagram.com/">
-        <Image src={logoIn} />
+        <Image src={logoIn} alt="перейти на інстаграм" />
       </Link>
       <Link href="https://www.tiktok.com/">
-        <Image src={logoTT} />
+        <Image src={logoTT} alt="перейти на тікток" />
       </Link>
       <Link href="https://www.web.telegram.org/">
-        <Image src={logoT} />
+        <Image src={logoT} alt="перейти на телеграм" />
       </Link>
       <Link href="https://www.linkedin.com/">
-        <Image src={logoL} />
+        <Image src={logoL} alt="перейти на лінкедін" />
       </Link>
     </p>
   );

@@ -2,7 +2,7 @@ import classes from "./TextHeader.module.css";
 export default function TextHeader() {
   return (
     <header className={classes.textheader}>
-      <h1>Вітаємо на кафедрі віртуальної та доповненої реальності</h1>
+      <h2>Вітаємо на кафедрі віртуальної та доповненої реальності</h2>
       <p>
         Ласкаво просимо на сторінку Кафедри віртуальної та доповненої
         реальності!

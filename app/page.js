@@ -9,12 +9,12 @@ import classes from "./page.module.css";
 export default function Home() {
   return (
     <>
-      <main>
+      <main id="maincontent">
         <header className={classes.mainheader}>
           <TextHeader />
-          <Image src={startImg} />
+          <Image src={startImg} alt="" />
         </header>
-        <MainSection h2section={"Кафедральне життя"} />
+        <MainSection h3section={"Кафедральне життя"} />
       </main>
     </>
   );
