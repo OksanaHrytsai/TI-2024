@@ -3,7 +3,7 @@ import Image from "next/image";
 import NavLink from "./NavLink";
 
 import logoImg from "@/public/logo.svg";
-import classes from "./header.module.css";
+import classes from "./Header.module.css";
 
 export default function Header() {
   return (

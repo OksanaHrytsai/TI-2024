@@ -1,18 +1,18 @@
 .header {
   /* Анна */
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 40px 0;
-  background-color: #113569;
+  background-color: #113569; */
   /* оксана */
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
   background-color: #3968ad;
-  gap: 2rem; */
+  gap: 2rem;
 }
 
 .nav ul {

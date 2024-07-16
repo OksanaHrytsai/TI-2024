@@ -1,4 +1,4 @@
-import classes from "./textheader.module.css";
+import classes from "./TextHeader.module.css";
 export default function TextHeader() {
   return (
     <header className={classes.textheader}>
