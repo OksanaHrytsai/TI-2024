@@ -1,8 +1,7 @@
+import classes from "./Footer.module.css";
 import UniverInfo from "./UniverInfo";
 import Contacts from "../contacts/Contacts";
 import Social from "./Social";
-
-import classes from "./Footer.module.css";
 
 export default function Footer() {
   return (

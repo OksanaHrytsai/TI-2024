@@ -2,6 +2,7 @@ import Image from "next/image";
 import locateImg from "@/public/locate.svg";
 import emailImg from "@/public/mail-icon.svg";
 import phoneImg from "@/public/phone-icon.svg";
+
 export default function Contacts() {
   return (
     <div>

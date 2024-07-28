@@ -1,7 +1,8 @@
 import Post from "./Post";
 import classes from "./PostList.module.css";
-import imgPost1 from "@/public/post.jpg";
-import imgPost2 from "@/public/logo.jpg";
+import imgPost1 from "@/public/post1.png";
+import imgPost2 from "@/public/post2.png";
+import imgPost3 from "@/public/post3.png";
 export default function PostList() {
   const posts = [
     {
@@ -20,7 +21,7 @@ export default function PostList() {
       // id: 3,
       h: "Різноманітне академічне середовище",
       body: "Наше академічне середовище вирізняється своєю різноманітністю та багатогранністю. Студенти мають змогу брати участь у міждисциплінарних дослідженнях, працювати в міжнародних командах та взаємодіяти з провідними експертами у сфері VR/AR. Ми пропонуємо широкий спектр освітніх програм та додаткових заходів, що сприяють всебічному особистісному та професійному зростанню здобувачів освіти.",
-      img: imgPost1,
+      img: imgPost3,
     },
   ];
   return (

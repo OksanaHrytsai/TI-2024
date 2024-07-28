@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./NavLink";
-
+import Logout from "@/component/logout/Logout";
 import logoImg from "@/public/logo.svg";
 import classes from "./Header.module.css";
+import { getSession } from "@/lib/auth";
 
 export default function Header() {
   return (
@@ -15,7 +16,9 @@ export default function Header() {
             alt="Логотип кафедри. Посилання на домашню сторінку"
           />
         </Link>
-        <h1>Кафедра віртуальної та доповненої реальності</h1>
+        <h1 className={classes.h1}>
+          Кафедра віртуальної та доповненої реальності
+        </h1>
       </div>
       <nav className={classes.nav}>
         <ul>
@@ -33,6 +36,9 @@ export default function Header() {
           </li>
           <li>
             <NavLink href="/contacts">Контакти</NavLink>
+          </li>
+          <li className="logout">
+            <Logout />
           </li>
         </ul>
       </nav>

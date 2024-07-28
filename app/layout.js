@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body>
-        <Link href="#maincontent" className='skipmain'>Перейти до головного</Link>
+        <Link href="#maincontent" className="skipmain">
+          Перейти до головного
+        </Link>
         <Header />
         {children}
         <Footer />

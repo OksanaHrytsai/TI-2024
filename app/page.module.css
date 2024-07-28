@@ -1,3 +1,17 @@
 .mainheader {
   display: flex;
+  background: linear-gradient(
+    270.01deg,
+    #16407e 0.01%,
+    #16407e 6.9%,
+    #95ceeb 24.01%,
+    #16407e 49.35%,
+    #16407e 99.99%
+  );
+}
+
+.mainheader img {
+  width: 40vw;
+  height: auto;
+  object-fit: contain;
 }

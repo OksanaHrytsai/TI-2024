@@ -2,19 +2,20 @@
 .link:visited {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
+  font-size: 1 rem;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
 }
 
 .link:hover {
-  color: #90ff3a;
+  color: #61ff5e;
   text-decoration: underline;
 }
 
 .active {
-  color: #83ff22;
+  /* color: #83ff22; */
+  color: #61ff5e;
   text-decoration: underline;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }

@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
+import classes from "./PostList.module.css";
 export default function Post(props) {
   return (
-    <li>
-      <Image src={props.img.src} alt="" width={160} height={100} />
-      <h4>{props.h}</h4>
-      <p>{props.body}</p>
+    <li className={classes.post}>
+      <Image src={props.img.src} alt="" width={100} height={100} />
+      <h4 className={classes.post_title}>{props.h}</h4>
+      <p className={classes.post_text}>{props.body}</p>
     </li>
   );
 }

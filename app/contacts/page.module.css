@@ -1,4 +1,48 @@
+.maincontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.feadback {
+  padding: 2.5rem;
+  background-color: #def3fd;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rm;
+}
+
 .h2 {
-  color: darkblue;
-  background-color: burlywood;
+  color: #113569;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.17;
+  padding-bottom: 50px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2.1;
+  color: #113569;
+}
+
+.contacts {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rm;
+}
+
+.contact_adress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact_text {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #113569;
 }

@@ -1,0 +1,39 @@
+.h3 {
+  padding: 100px 0 50px 270px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.input {
+  display: flex;
+  gap: 50px;
+  padding-left: 270px;
+  height: 72px;
+  /* padding-bottom: 100px; */
+}
+
+.input_field {
+  border-radius: 0 40px 0 0;
+  width: 960px;
+  border: none;
+}
+
+.input_field::placeholder {
+  color: #153f7d;
+  font-size: 24px;
+  line-height: 1;
+  padding: 24px 0 24px 32px;
+}
+
+.input_button {
+  border-radius: 40px 0 0 0;
+  background-color: #ffdd55;
+  width: 399px;
+  border: none;
+  color: #153f7d;
+  font-size: 24px;
+  line-height: 1;
+  padding: 24px 0 24px 38px;
+}

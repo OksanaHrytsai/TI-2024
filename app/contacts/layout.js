@@ -8,7 +8,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-      <h2 className={classes.h2}>Контакти кафедри</h2>
       {children}
     </>
   );

@@ -1,10 +1,42 @@
 .posts {
   list-style: none;
-  max-width: 50rem;
+  max-width: 100rem;
   margin: 1rem auto;
   padding: 1rem 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
   grid-template-columns: repeat(3, 30%);
   justify-content: center;
+  /* margin: 0 auto; */
+  color: #113569;
 }
+
+.post_title {
+  /* margin: 1rem auto; */
+  /* padding: 1rem 0; */
+  padding-top: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  /* text-align: center; */
+}
+
+.post_text {
+  /* margin: 1rem auto; */
+  /* padding: 0.5rem 0; */
+  padding-top: 2rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .post:nth-child(even) {
+  padding: 20px;
+} */

@@ -1,0 +1,46 @@
+.uform {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  color: #16407e;
+  padding: 1rem 0.5rem;
+}
+.udata {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.udata label,
+.utext label {
+  display: block;
+  padding: 0.5rem 0rem;
+}
+.udata input {
+  display: block;
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  width: 90%;
+  height: 3rem;
+  border-radius: 0px 20px 0px 0px;
+}
+.utext {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.utext button {
+  border-radius: 20px 0px 0px 0px;
+  height: 3rem;
+  align-items: flex-end;
+  width: 50%;
+  background-color: #ffdd55;
+  margin-top: 2rem;
+  /* margin-left: 12rem; */
+}
+
+.utext textarea {
+  border-radius: 20px 0px 0px 0px;
+  width: 90%;
+  height: 11rem;
+  padding: 0.2rem;
+}
