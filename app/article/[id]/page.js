@@ -1,34 +1,15 @@
 "use client";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
+import pdficon from "@/public/pdf-icon.svg";
 import articles from "@/component/publications/Publications";
-export default function ArticlePage() {
+
+import classes from "./page.module.css";
+export default function ArticlePage({ params }) {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const id = params.id;
+  const article = articles.find((publication) => publication.id == id);
 
-  const id = searchParams.get("id");
-
-  const article = articles.find((article, index) => index.toString() === id);
-
-  if (!article) {
-    return (
-      <>
-        {" "}
-        <button
-          type="button"
-          onClick={async () => {
-            try {
-              router.push("/science");
-            } catch (error) {
-              console.log("error", error);
-            }
-          }}
-        >
-          &larr; До списку публікацій
-        </button>
-        <p>Стаття не знайдена</p>
-      </>
-    );
-  }
   return (
     <main>
       <button
@@ -44,16 +25,29 @@ export default function ArticlePage() {
         &larr; До списку публікацій
       </button>
 
-      <div>
-        <h1>{article.title}</h1>
-        <p>
-          <strong>Автор:</strong> {article.author}
-        </p>
-        <p>
-          <strong>Анотація:</strong>
-          {article.description}
-        </p>
-      </div>
+      {article && (
+        <div className={classes.container}>
+          <article className={classes.article_content}>
+            <h1>{article.title}</h1>
+            <p>
+              <strong>Автор:</strong> {article.author}
+            </p>
+            <p>
+              <strong>Анотація:</strong>
+              {article.description}
+            </p>
+          </article>
+          <aside className={classes.aside}>
+            <button>
+              {" "}
+              <Image src={pdficon} alt="Завантажити PDF" /> PDF (Українська)
+            </button>
+            <p>Категорія: {article.category}</p>
+            <p>Дата публікації: {article.data}</p>
+          </aside>
+        </div>
+      )}
+      {!article && <p>Статтю не знайдено</p>}
     </main>
   );
 }
