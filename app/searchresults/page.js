@@ -3,7 +3,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import SearchForm from "@/component/search/SearchForm";
 import Article from "@/component/publications/Article";
-import articles from "@/component/publications/Publications";
+import { articles } from "@/component/publications/Publications";
 import classes from "./page.module.css";
 export default function SearchResultPage() {
   const router = useRouter();

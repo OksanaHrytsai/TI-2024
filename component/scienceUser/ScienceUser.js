@@ -5,7 +5,7 @@ import HeaderImg from "@/public/science_man.png";
 import ArticleList from "@/component/publications/ArticleList";
 import SearchBlock from "@/component/search/SearchBlock";
 
-import articlesSize from "@/component/publications/PublicationSize";
+import { articlesSize } from "@/component/publications/PublicationSize";
 import classes from "./ScienceUser.module.css";
 export default function ScienceUserPage() {
   const [countArticles, setCountArticles] = useState(6);

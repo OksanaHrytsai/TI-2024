@@ -37,3 +37,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.cancelDelete button {
+  background-color: #def3fd;
+  color: #113569;
+}
+
+.confirmDelete button {
+  background-color: #ff2b2b;
+  color: #fff;
+}

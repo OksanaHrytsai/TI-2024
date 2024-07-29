@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { articles as initialArticles } from "@/component/publications/Publications";
 import imgEdit from "@/public/edit-icon.svg";
+import imgCancel from "@/public/cancel-icon.svg";
 import imgDelete from "@/public/delete-icon.svg";
 import classes from "./ArticleTable.module.css";
 export default function ArticleTable() {
@@ -37,11 +38,18 @@ export default function ArticleTable() {
               {articleToDelete.title}"?
             </p>
             <div className={classes.modalButton}>
-              <div>
-                <button onClick={cancelDelete}>Відхилити</button>
+              <div className={classes.cancelDelete}>
+                <button onClick={cancelDelete}>
+                  {" "}
+                  <Image src={imgCancel} alt="Відхилити видалення" />
+                  Відхилити
+                </button>
               </div>
-              <div>
-                <button onClick={confirmDelete}>Видалити</button>
+              <div className={classes.confirmDelete}>
+                <button onClick={confirmDelete}>
+                  <Image src={imgDelete} alt="Видалити статтю" />
+                  Видалити
+                </button>
               </div>
             </div>
           </div>
