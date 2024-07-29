@@ -2,12 +2,12 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import pdficon from "@/public/pdf-icon.svg";
-import articles from "@/component/publications/Publications";
+import { articles } from "@/component/publications/Publications";
 
 import classes from "./page.module.css";
 export default function ArticlePage({ params }) {
   const router = useRouter();
-  const id = params.id;
+  const id = Number(params.id);
   const article = articles.find((publication) => publication.id == id);
 
   return (

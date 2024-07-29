@@ -1,5 +1,3 @@
-import articles from './Publications';
+import { articles } from "./Publications";
 
-const articlesSize = articles.length;
-
-export default articlesSize;
+export const articlesSize = articles.length;

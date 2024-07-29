@@ -9,7 +9,7 @@ async function encrypt(payload) {
   return await new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime("100s")
+    .setExpirationTime("1000s")
     .sign(key);
 }
 
@@ -47,7 +47,7 @@ export async function POST(request) {
   // Створення JWT токена
   const user = { email, name: "Модератор" };
   const token = await encrypt({ user });
-  const expires = new Date(Date.now() + 100 * 1000); // 100 секунд
+  const expires = new Date(Date.now() + 100 * 10000); // 100 секунд
 
   const res = NextResponse.json({ token });
   res.cookies.set("session", token, { expires, httpOnly: true });

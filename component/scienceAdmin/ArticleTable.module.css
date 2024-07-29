@@ -1,0 +1,39 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #113569;
+}
+.table th {
+  border: 1px solid #fff;
+  background-color: #def3fd;
+  padding: 8px;
+  text-align: left;
+}
+.table td {
+  border: 1px solid #f9f9f9;
+  padding: 8px;
+  text-align: left;
+}
+
+.modal {
+  position: fixed;
+  width: 40vw;
+  height: 40vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #113569;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.2rem;
+}
+.modalButton {
+  display: flex;
+  justify-content: space-between;
+}

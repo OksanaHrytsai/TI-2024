@@ -1,6 +1,6 @@
 import Article from "./Article";
 import classes from "./ArticleList.module.css";
-import articles from "./Publications";
+import { articles } from "./Publications";
 
 export default function ArticleList(props) {
   return (

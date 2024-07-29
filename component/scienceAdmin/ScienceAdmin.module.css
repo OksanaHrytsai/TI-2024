@@ -1,0 +1,12 @@
+.main {
+  margin-left: 25vw;
+  padding: 2rem;
+}
+.main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h2 {
+  color: #191919;
+}

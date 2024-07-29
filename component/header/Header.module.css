@@ -7,9 +7,6 @@
   gap: 1.5rem;
 }
 
-.headerAdmin {
-  display: block;
-}
 .logo {
   /* max-width: 25vw; */
   display: flex;

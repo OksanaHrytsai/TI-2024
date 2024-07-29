@@ -4,7 +4,6 @@ import NavLink from "./NavLink";
 import Logout from "@/component/logout/Logout";
 import logoImg from "@/public/logo.svg";
 import classes from "./Header.module.css";
-import { getSession } from "@/lib/auth";
 
 export default function Header() {
   return (
